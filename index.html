@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>お年玉ver.2021</title>
+   <link rel="icon" href="asset/img/syougatsu2_otoshidama.png">
+   <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+   <script>
+      function pushMoney()
+      {
+         var min = 1;
+         var max = 1000000;
+         var money = Math.floor(Math.random() * ((max + 1) - min) + min);
+         
+         var resultInt = Math.floor(Math.random() * 2);
+
+         switch(resultInt)
+         {
+            case 0:
+               resultText = money + "円貰う";
+            break;
+
+            case 1:
+               resultText = money + "円払う";
+            break;
+         }
+         document.getElementById("result_money").textContent = resultText;
+      }
+   
+      function pushTweet()
+      {
+
+      }
+   </script>
+
+   <main>
+      <h1>キミのお年玉の中身は！？</h1>
+      <div class="pushBtn">
+         <button onclick="pushMoney()">お年玉を見る</button>
+      </div>
+
+      <div style="position: relative; display:inline-block;">
+         <img src="asset/img/eto_hitsuji_otoshidama_cut.png" alt="topimg"> 
+         <div style="position: absolute; top: 0; right: -0; max-width: 100%; max-height: 100%; padding: 30px; text-align: right;">
+         <p id="result_money"></p>
+      </div></div>
+
+
+
+      <div class="sns_icon  twitter_back">
+         <a class="twitter" href="http://twitter.com/intent/tweet?text=あなたのお年玉の中身は！？ https://twitter.com/[twitter ID]/status/[ランダムな数字]/photo/1&url=https://sample.com/test/share-page&via=[twitter ID]&related=[twitter ID]&hashtags=お年玉2021" rel="nofollow" target="_blank" title="Twitterで共有">
+            <img src="/img/social_twitter.png" width="45" alt="twitter">
+         </a>
+     </div>
+   </main>
+   
+   <footer>
+      <h1>
+         お問い合わせ
+      </h1>
+   </footer>
+</body>
+</html>

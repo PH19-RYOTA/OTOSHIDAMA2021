@@ -1,0 +1,24 @@
+body
+{
+   margin:0;
+   padding:0;
+   font-family: "游明朝",Yumincho,"ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","HG明朝E","M S 明朝",serif;
+   text-align: center;
+}
+
+h1
+{
+   font-family: "メイリオ";
+   text-align: center;
+}
+
+#tweetBtn
+{
+   background-color: rgba(29,161,242,1.00);
+}
+
+footer
+{
+   background-color: black;
+   color: white;
+}
